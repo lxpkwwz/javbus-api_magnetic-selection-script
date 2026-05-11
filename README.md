@@ -2,6 +2,8 @@
 JAV 磁力优选脚本 (青龙面板)
 基于青龙面板的番号磁力链接自动抓取与智能优选工具。通过 javbus-api 获取磁力数据，支持缓存持久化、中文字幕优先、广告水印过滤、文件体积优选，并可将结果导出为 Excel。
 
+调用的api为：ovnrain / javbus-api项目，需docker自行部署。https://github.com/ovnrain/javbus-api
+
 ✨ 主要特性
 双模式运行：可通过环境变量切换「优选模式」和「缓存补全模式」。
 
