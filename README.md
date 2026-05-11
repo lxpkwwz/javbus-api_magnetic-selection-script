@@ -1,4 +1,4 @@
-# javbus-api_Magnetic-selection-script
+# javbus-api_magnetic-selection-script
 JAV 磁力优选脚本 (青龙面板)
 基于青龙面板的番号磁力链接自动抓取与智能优选工具。通过 javbus-api 获取磁力数据，支持缓存持久化、中文字幕优先、广告水印过滤、文件体积优选，并可将结果导出为 Excel。
 
@@ -38,12 +38,12 @@ requests
 openpyxl（仅在优选模式下需要）
 
 2. 部署脚本
-将脚本文件（如 jav_magnet.py）放入青龙面板的 scripts 目录。
+将脚本文件（如 javbus-api_Magnetic-selection-script.py）放入青龙面板的 scripts 目录。
 
 在青龙面板中创建任务，设置执行命令：
 
 bash
-task jav_magnet.py
+task javbus-api_Magnetic-selection-script.py
 根据你的需要，在青龙面板的环境变量中设置：
 
 变量名：ENABLE_OPTIMIZE，值设为 true 开启优选模式，否则默认为缓存补全模式。
@@ -54,11 +54,16 @@ task jav_magnet.py
 
 输入文件格式示例：
 
-text
+text：
+
 任务名（可中文，用于输出 Excel 文件名）
+
 ABC-123
+
 DEF-456
+
 GHI-789
+
 第一行为任务名称，后续每行为一个番号（大小写不敏感，但建议保持标准格式如 SSIS-001）。
 
 文件名必须包含字母 id（例如 my_movie_ids.txt），否则不会被识别。
